@@ -33,7 +33,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot:'only-on-failure',
     video:'retain-on-failure',
-    permissions:['notifications','geolocatoins'],
+    permissions:['notifications','geolocatoin'],
     actionTimeout:15000,
   },
 
