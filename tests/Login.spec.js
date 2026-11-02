@@ -16,5 +16,6 @@ test("login to sauce demo", async ({ page }) => {
     let login = new Login(page);
 
     await login.loginToSauceDemo(url, username, password);
+    await login.loginToSauceDemo(url, username, password);
 
 });
