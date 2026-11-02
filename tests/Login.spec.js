@@ -1,9 +1,9 @@
 import { test } from "@playwright/test";
-import Login from "../POM/Login.page";
+import LoginPage from "../POM/LoginPage";
+import login from '../Test_Data/Login.json'
 import fs from "fs";
 
-let userdata = fs.readFileSync("C:/Users/thris/OneDrive/Desktop/saucedemo/EcommerceFramwork/Test_Data/Login.json"
-);
+let userdata = fs.readFileSync("Test_Data/Login.json", "utf-8");
 
 userdata = JSON.parse(userdata);
 
@@ -12,10 +12,7 @@ let username = userdata.username;
 let password = userdata.password;
 
 test("login to sauce demo", async ({ page }) => {
-
-    let login = new Login(page);
-
-    await login.loginToSauceDemo(url, username, password);
-    await login.loginToSauceDemo(url, username, password);
-
+    let login = new LoginPage(page);
+    await login.Logintosaucedemo(url, username, password);
+    await login.Logintosaucedemo(url, username, password);
 });

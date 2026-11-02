@@ -33,8 +33,10 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot:'only-on-failure',
     video:'retain-on-failure',
-    permissions:['notifications','geolocatoin'],
+        permissions: ['geolocation','notifications'],
+
     actionTimeout:15000,
+    headless:true,
   },
 
   /* Configure projects for major browsers */
