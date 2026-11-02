@@ -2,10 +2,7 @@ import { test } from "@playwright/test";
 import Login from "../POM/Login.page";
 import fs from "fs";
 
-let userdata = fs.readFileSync(
-    "C:/Users/thris/OneDrive/Desktop/saucedemo/EcommerceFramwork/POM/LoginData.json",
-    "utf-8"
-);
+let userdata = fs.readFileSync("C:/Users/thris/OneDrive/Desktop/saucedemo/EcommerceFramwork/POM/Login.page.js");
 
 userdata = JSON.parse(userdata);
 
